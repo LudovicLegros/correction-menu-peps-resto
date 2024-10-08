@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/* ----------NAVBAR----------------- */
+nav{
+    background-color: rgb(195, 110, 110);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+
+.fa-bars{
+    display: none;
+}
+
+ul{
+    display:flex;
+}
+
+ul li {
+    margin:0 1rem;
+}
+
+
+/* ----------PEP'S SURLIGNAGE----------------- */
+
+#surlignage{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#surlignage article{
+    margin: 3rem;
+    width: 20%;
+}
+
+#surlignage p{
+    margin: 1rem 0;
+}
+
+h3{
+    display:inline-block
+}
+
+span{
+    position: relative;
+    display: block;
+}
+
+span:before{
+    content:"";
+    background-color: rgb(0, 229, 255);
+    position: absolute;
+    height: 100%;
+    width: 110%;
+    left:-5%;
+    top:50%;
+    z-index: -1;
+
+}
+
+/* EVENT */
+
+#event{
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    padding:3rem
+
+}
+
+#event article{
+    /* border:1px solid black; */
+    display: flex;
+    
+}
+
+#event>div article{
+    background-color: white;
+    margin-right: 1rem;
+    
+}
+
+#event>div article:first-child{
+        margin:0 1rem 1rem 0;
+}
+
+#event>div{
+    width: 400px;
+}
+
+.date{
+    background-color: black;
+    color:white;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.back{
+    padding: 2rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.top{
+    background-image: url(../img/event-01.jpg);
+}
+
+.bottom{
+    background-image: url(../img/event-02.jpg);
+}
+
+.right{
+    background-image: url(../img/event-03.jpg);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+}
+
+.right>div{
+    background-color: white;
+    width: 100%;
+}
+
+.right .date{
+    margin: auto;
+}
+
+
+@media screen and (max-width:770px){
+    .fa-bars{
+        display: block;
+        margin-left: 1rem;
+    }
+
+    ul{
+        display:none;
+    }
+
+    .menu_dropdown:hover ul{
+        display:block;
+        position: absolute;
+        top:2rem ;
+        left:0rem;
+        background-color: black;
+        color:white;
+    }
+
+    ul li{
+        padding: 1rem;
+    }
+
+    #surlignage{
+        flex-direction: column;
+    }
+
+    .right{
+        height: 400px;
+        width: 400px;
+        margin-top: 1rem;
+    }
+
+    #event{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+
